@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Spring</title>
 </head>
 <body>
 <h1> Spring</h1>
-
+<br>
+<h1 th:text="'hello, ' + ${name}"/>
 
 </body>
 </html>

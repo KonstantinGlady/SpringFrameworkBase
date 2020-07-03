@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Редактировать позицию</title>
+</head>
+<body>
+<h1>Редактировать товар</h1>
+<form th:action="@{/products/edit}" th:object="${product}" method="post">
+    <input th:field="*{id}" readonly/>
+    <input th:field="*{title}"/>
+    <input th:field="*{cost}"/>
+    <input type="submit">
+</form>
+
+</body>
+</html>
