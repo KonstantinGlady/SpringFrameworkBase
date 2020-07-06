@@ -14,5 +14,7 @@
         <property name="current_session_context_class">thread</property>
 
         <mapping class="ru.gik.hibernate.Person"/>
+        <mapping class="ru.gik.hibernate.homwork3.Customer"/>
+        <mapping class="ru.gik.hibernate.homwork3.Product"/>
     </session-factory>
 </hibernate-configuration>
