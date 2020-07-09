@@ -1,0 +1,3 @@
+drop  table products if exists;
+create table if not exists products (id serial, title varchar(255), cost int, primary key (id));
+insert into products (title, cost) values ('product1', 100),('product2',115), ('product3',34), ('product4', 160),('product5',65), ('product6',343), ('product7', 1000),('product8',1115), ('product9',374), ('product10', 188),('product11',815), ('product12',374), ('product13', 1820),('product14',1175), ('product15',354), ('product16', 1009),('product17',888), ('product18',344), ('product19', 1700),('product20',1158);
