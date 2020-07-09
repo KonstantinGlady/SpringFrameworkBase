@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Ассортимент</title>
+</head>
+<body>
+
+<table>
+    <h1>Каталог:</h1>
+    <thead>
+    <tr>
+        <td> id</td>
+        <td> title</td>
+        <td> cost</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="s : ${products}">
+        <td th:text="${s.id}"></td>
+        <td th:text="${s.title}"></td>
+        <td th:text="${s.cost}"></td>
+    </tr>
+    </tbody>
+</table>
+<form th:action="@{/products/lessGreat}">
+    <input type="text" th:name="digMin" th:value="null" placeholder="min"/>
+    <input type="text" th:name="digMax" th:value="null" placeholder="max"/>
+    <input type="submit"/>
+</form>
+</body>
+</html>
